@@ -64,7 +64,7 @@ export default function App() {
           }
         } else {
           handleLogout();
-          throw new Error("Unauthorized - please log in again");
+          throw new Error("Unauthorized - can you please log in again");
         }
       }
 
