@@ -1,3 +1,13 @@
+# 📘 Quiz Game
+
+A **full-stack quiz game application** built with **React (frontend)** and **Flask (backend)**.  
+Users can register, log in, take quizzes, track their history, and view results.
+
+---
+
+## 📂 Project Structure
+
+```bash
 quiz-game
 │
 ├── backend/                # Flask backend
