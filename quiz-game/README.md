@@ -1,62 +1,27 @@
 quiz-game
 │
-├── backend
-│   ├── migrations
-│   │   ├── versions
-│   │   │   ├── 2eb707dd9134_add_level_column_to_question.py
-│   │   │   ├── 025b9ba320cf_change_selected_option_to_text.py
-│   │   │   ├── 142c103c7cb7_add_quiz_history.py
-│   │   │   ├── 4a4d028e3d29_initial_migration.py
-│   │   │   ├── e051666e6401_add_password_hash_to_users.py
-│   │   ├── __pycache__/
-│   │   ├── alembic.ini
-│   │   ├── env.py
-│   │   ├── README
-│   │   ├── script.py.mako
-│   │
-│   ├── src
-│   │   ├── __pycache__/
-│   │   ├── auth.py
-│   │   ├── models.py
-│   │   ├── routes.py
-│   │   ├── schemas.py
-│   │   ├── shared.py
-│   │   ├── user.py
-│   │
-│   ├── app.py
-│   ├── Dockerfile
-│   ├── README.md
-│   ├── requirements.txt
+├── backend/                # Flask backend
+│   ├── migrations/         # Database migrations (Alembic)
+│   ├── src/                # Application source code
+│   │   ├── auth.py         # Authentication routes
+│   │   ├── models.py       # Database models
+│   │   ├── routes.py       # Quiz routes
+│   │   ├── schemas.py      # Marshmallow schemas
+│   │   ├── shared.py       # Shared configurations (DB, etc.)
+│   │   ├── user.py         # User management
+│   ├── app.py              # Flask entry point
+│   ├── Dockerfile          # Backend container setup
+│   ├── requirements.txt    # Python dependencies
 │
-├── frontend
-│   ├── node_modules/
-│   ├── public
-│   │   ├── logo/
-│   │   ├── sounds/
-│   │   └── index.html
-│   │
-│   ├── src
-│   │   ├── components
-│   │   │   ├── Confetti.jsx
-│   │   │   ├── Navbar.jsx
-│   │   │   ├── Question.jsx
-│   │   │   ├── QuizResults.jsx
-│   │   │
-│   │   ├── pages
-│   │   │   ├── History.jsx
-│   │   │   ├── Login.jsx
-│   │   │   ├── QuizPage.jsx
-│   │   │   ├── Register.jsx
-│   │   │   ├── Settings.jsx
-│   │   │
-│   │   ├── App.jsx
-│   │   ├── index.js
-│   │   ├── styles.css
-│   │
-│   ├── .env
+├── frontend/               # React frontend
+│   ├── public/             # Static files
+│   ├── src/                # React components/pages
+│   │   ├── components/     # UI components (Navbar, Question, etc.)
+│   │   ├── pages/          # Pages (Login, QuizPage, History, etc.)
+│   │   ├── App.jsx         # Main React component
+│   │   ├── index.js        # React entry point
+│   ├── .env                # Frontend environment variables
 │
-├── Dockerfile
-├── package-lock.json
-├── package.json
-├── docker-compose.yml
-├── README.md
+├── docker-compose.yml      # Multi-container setup
+├── Dockerfile              # Root Dockerfile (optional)
+└── README.md               # Project documentation
