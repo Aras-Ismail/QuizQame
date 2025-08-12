@@ -25,5 +25,5 @@ You should have the following application to run the project:
 1. Visual studio code
 2. Docker Desktop
 - How to run the projcet:
- in order to run the project firstly run the backend through these commands: ( cd quiz-game ) then ( docker-compose up -d ), Then you can go to Frontend to run these commands: ( cd quiz-game ) then ( cd frontend ) at the end ( npm start )   
+ in order to run the project firstly run the backend through these commands: ( cd quiz-game ) then ( docker-compose up -d ), Then you can go to Frontend to run these commands: ( cd quiz-game ) then ( cd frontend ) at the end ( npm start ), if it does not work, run this command npm install then npm start. 
 
